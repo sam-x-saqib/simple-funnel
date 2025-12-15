@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Attirer 3-5 Clients Qualifiés de Plus Par Mois</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: #0a0a0a;
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 20px 40px;
+        background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+      }
+
+      .container {
+        max-width: 850px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      /* Eyebrow */
+      .eyebrow {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .badge {
+        display: inline-block;
+        background: rgba(70, 130, 180, 0.15);
+        border: 1px solid rgba(70, 130, 180, 0.3);
+        padding: 10px 24px;
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #87ceeb;
+        letter-spacing: 0.5px;
+      }
+
+      /* Headline */
+      .headline {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: clamp(36px, 5vw, 52px);
+        font-weight: 800;
+        line-height: 1.15;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      .highlight {
+        color: #4682b4;
+      }
+
+      .subheadline {
+        font-size: clamp(18px, 2.5vw, 22px);
+        color: #a0a0a0;
+        line-height: 1.5;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* Target Box */
+      .target-box {
+        background: rgba(70, 130, 180, 0.08);
+        border: 1px solid rgba(70, 130, 180, 0.2);
+        border-radius: 12px;
+        padding: 30px;
+        margin: 40px 0;
+        text-align: center;
+      }
+
+      .target-box h3 {
+        font-size: 15px;
+        color: #4682b4;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      .target-box p {
+        font-size: 17px;
+        color: #d0d0d0;
+        line-height: 1.6;
+      }
+
+      /* Learning Section */
+      .learning-section {
+        background: #151515;
+        border: 1px solid #2a2a2a;
+        border-radius: 12px;
+        padding: 40px 35px;
+        margin-bottom: 40px;
+      }
+
+      .learning-section h2 {
+        font-size: clamp(26px, 3.5vw, 34px);
+        font-weight: 700;
+        margin-bottom: 35px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .learning-section h2 .accent {
+        color: #4682b4;
+      }
+
+      /* Bullets */
+      .bullets {
+        list-style: none;
+        margin: 0;
+      }
+
+      .bullets li {
+        padding: 20px 0 20px 55px;
+        font-size: 16px;
+        line-height: 1.7;
+        position: relative;
+        color: #d0d0d0;
+        border-bottom: 1px solid #222;
+      }
+
+      .bullets li:last-child {
+        border-bottom: none;
+      }
+
+      .bullets li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, #4682b4 0%, #5f9ea0 100%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .bullets li strong {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      /* Duration Badge */
+      .duration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 35px 0 0;
+        padding: 22px;
+        background: rgba(70, 130, 180, 0.08);
+        border-radius: 10px;
+        border: 1px solid rgba(70, 130, 180, 0.15);
+      }
+
+      .duration-icon {
+        font-size: 28px;
+      }
+
+      .duration-text .label {
+        font-size: 12px;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+      }
+
+      .duration-text .time {
+        font-size: 22px;
+        font-weight: 700;
+        color: #4682b4;
+      }
+
+      /* CTA */
+      .cta-container {
+        text-align: center;
+        margin: 45px 0;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #4682b4 0%, #5f9ea0 100%);
+        color: #fff;
+        padding: 22px 55px;
+        border-radius: 50px;
+        font-size: 19px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 35px rgba(70, 130, 180, 0.3);
+        border: none;
+        cursor: pointer;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 45px rgba(70, 130, 180, 0.4);
+      }
+
+      .cta-subtext {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #888;
+        line-height: 1.6;
+      }
+
+      /* Trust Signals */
+      .trust-signals {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 60px;
+        padding-top: 50px;
+        border-top: 1px solid #2a2a2a;
+        flex-wrap: wrap;
+      }
+
+      .trust-item {
+        text-align: center;
+      }
+
+      .trust-number {
+        font-size: 36px;
+        font-weight: 800;
+        color: #4682b4;
+        margin-bottom: 8px;
+      }
+
+      .trust-label {
+        font-size: 13px;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      /* Footer */
+      footer {
+        background: #000;
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 1px solid #1a1a1a;
+        margin-top: 80px;
+      }
+
+      footer p {
+        color: #666;
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate {
+        animation: fadeIn 0.8s ease-out;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero {
+          padding: 40px 15px 30px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+
+        .learning-section {
+          padding: 30px 20px;
+        }
+
+        .bullets li {
+          padding: 18px 0 18px 50px;
+          font-size: 15px;
+        }
+
+        .bullets li::before {
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+        }
+
+        .trust-signals {
+          gap: 35px;
+        }
+
+        .cta-button {
+          padding: 20px 45px;
+          font-size: 17px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <!-- Eyebrow -->
+        <div class="eyebrow animate">
+          <span class="badge">🎁 Formation Gratuite • 20 Minutes</span>
+        </div>
+
+        <!-- Headline -->
+        <div class="headline animate">
+          <h1>
+            Comment Attirer
+            <span class="highlight">3-5 Clients Qualifiés de Plus</span> Par
+            Mois<br />
+            De Façon Stable et Prévisible
+          </h1>
+          <p class="subheadline">
+            Découvre le système d'acquisition automatisé que j'utilise depuis 5
+            ans — et comment mes clients l'appliquent dans leur activité
+          </p>
+        </div>
+
+        <!-- Target Box -->
+        <div class="target-box animate">
+          <h3>Cette formation est pour toi si :</h3>
+          <p>
+            Tu es <strong>coach, thérapeute ou formateur</strong>, tu génères
+            déjà entre
+            <strong>3 000 et 10 000 € par mois de façon irrégulière</strong>, et
+            tu veux <strong>stabiliser ton acquisition client</strong> sans
+            dépendre du hasard
+          </p>
+        </div>
+
+        <!-- Learning Section -->
+        <div class="learning-section animate">
+          <h2>
+            Dans cette formation, <span class="accent">tu vas découvrir :</span>
+          </h2>
+
+          <ul class="bullets">
+            <li>
+              <strong
+                >Pourquoi 90% des accompagnants restent dans
+                l'imprévisibilité</strong
+              >
+              — et le seul élément qui sépare ceux qui galèrent de ceux qui ont
+              un flux client stable
+            </li>
+            <li>
+              <strong
+                >Le système d'acquisition que j'ai développé en 5 ans</strong
+              >
+              (tunnel automatisé + publicité ciblée) qui génère des rendez-vous
+              qualifiés même quand tu dors, voyages ou accompagnes tes clients
+            </li>
+            <li>
+              <strong>Comment qualifier tes prospects en amont</strong> pour ne
+              parler qu'à des personnes qui ont le besoin, les moyens, l'envie
+              et le bon timing
+            </li>
+            <li>
+              <strong
+                >La méthode pour ne plus jamais avoir de "mois à 0"</strong
+              >
+              — comment prévoir combien de clients tu vas faire ce mois-ci avant
+              même que le mois commence
+            </li>
+            <li>
+              <strong>Les 4 piliers d'un système d'acquisition stable</strong>
+              (Clarté, Machine, Conversion, Mindset) et ce que tu dois mettre en
+              place en priorité dans ton business
+            </li>
+            <li>
+              <strong>Combien ça coûte vraiment</strong> de mettre en place ce
+              système — budget publicité, outils, temps d'implémentation
+              (transparence totale, sans bullshit)
+            </li>
+            <li>
+              <strong
+                >Pourquoi la prospection manuelle, le SEO et les posts
+                organiques</strong
+              >
+              ne peuvent pas te donner la stabilité que tu cherches — et ce
+              qu'il faut faire à la place
+            </li>
+          </ul>
+
+          <div class="duration">
+            <div class="duration-icon">⏱️</div>
+            <div class="duration-text">
+              <div class="label">Durée de la formation</div>
+              <div class="time">20 minutes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-container animate">
+          <a
+            href="#"
+            class="cta-button"
+            onclick="alert('Intégrez ici votre vidéo VSL'); return false;"
+          >
+            👉 Regarder la Formation Maintenant
+          </a>
+          <p class="cta-subtext">
+            ✓ Accès immédiat<br />
+            ✓ Aucune carte bancaire requise<br />
+            ✓ 20 minutes pour transformer ton acquisition client
+          </p>
+        </div>
+
+        <!-- Trust Signals -->
+        <div class="trust-signals animate">
+          <div class="trust-item">
+            <div class="trust-number">5 ANS</div>
+            <div class="trust-label">D'expérience en acquisition</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-number">50+</div>
+            <div class="trust-label">Coachs accompagnés</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-number">150K€</div>
+            <div class="trust-label">Investis en publicité</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2024 Sam - Coach Business • Tous droits réservés</p>
+        <p style="margin-top: 10px">
+          Mentions légales • Politique de confidentialité
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth animations on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".animate").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "all 0.8s ease-out";
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
